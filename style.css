@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(100deg, red, blue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.Completed{
+    text-decoration: line-through;
+}
