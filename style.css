@@ -1,13 +1,116 @@
-body{
-    background: linear-gradient(100deg, red, blue);
+@font-face {
+  font-family: "Cabin-Regular";
+  src: url("./src/Cabin-Regular.ttf");
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+
+body,
+html,
+ul,
+h3 {
+  padding: 0;
+  margin: 0;
 }
-.Completed{
-    text-decoration: line-through;
+
+body {
+  background: linear-gradient(100deg, rgb(129, 170, 132), rgb(124, 154, 185));
+  color: rgb(235, 241, 234);
+  font-family: Cabin-Regular;
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Completed {
+  text-decoration: line-through 5px;
+  color: #a84155;
+}
+
+.top {
+  background-color: rgba(255, 255, 255, 0.224);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid rgb(235, 241, 234);
+  margin-bottom: 5%;
+}
+
+#input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #edf7f3;
+  color: rgb(27, 27, 27);
+  margin: 5px;
+  border: none;
+}
+
+#button {
+  background-color: #a84155;
+  border: none;
+  color: rgb(235, 241, 234);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.middle {
+  display: inline-flex;
+  margin-bottom: 5%;
+}
+
+.toDoThing {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.224);
+  backdrop-filter: blur(5px);
+}
+
+.list {
+  min-width: 200px;
+  list-style-type: none;
+  padding-left: 10px;
+  caret-color: transparent;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkButton,
+.deleteButton {
+  padding: 11px 22px;
+  border: none;
+  color: rgb(235, 241, 234);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.checkButton {
+  background-color: #56793d;
+}
+
+.deleteButton {
+  background-color: #936e36;
 }
