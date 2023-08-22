@@ -110,6 +110,10 @@ body {
 .checkButton {
   background-color: #56793d;
 }
+.checkButtonComplete {
+  -webkit-box-shadow: inset 5px 5px 15px 5px #000000; 
+  box-shadow: inset 5px 5px 15px 5px #000000;
+}
 
 .deleteButton {
   background-color: #936e36;
